@@ -1,13 +1,15 @@
 Write a shell script to check whether an input is a prime or not.
-echo "Enter value of n"
-read n
-i=0
-while test $i -le $n
+echo "Enter number"
+read num
+i=2
+while test $i -lt $num
 do
-k=`expr $i % 2`
-if [ $k -eq 0 ]
+k=`expr $num % $i`
+if test $k -eq 0
 then
-echo $i
+echo "number is not prime"
+exit
 fi
 i=`expr $i + 1`
 done
+echo "number is prime"
