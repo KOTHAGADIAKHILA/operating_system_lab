@@ -1,4 +1,4 @@
-Write a C program to simulate Bankers Algorithm for Deadlock Prevention
+//Write a C program to simulate Bankers Algorithm for Deadlock Prevention
 #include<stdio.h>
 #include<unistd.h>
 
